@@ -101,3 +101,81 @@ console.log('' == false); // true
 console.log('' === false); // false
 console.log(null == undefined); //true
 console.log(null=== undefined); //false
+
+//8. if,else if,else
+
+const name = 'nayoon';
+if(name === 'nayoon'){
+    console.log('Welcome nayoon');
+}else if(name === 'coder'){
+    console.log('Welcome coder');
+}else{
+    console.log('Who are you?');
+}
+
+//9. Ternary operator: ?
+//condition(조건)? value1(참) : value2(거짓);
+console.log(name === 'nayoon' ? 'yes': 'false');
+
+//10. Switch
+const browser = 'IE';
+
+switch(browser)
+{
+    case 'IE':
+        console.log('go away!');
+        break;
+    case 'Chrome':
+    case 'Firefox':
+        console.log('love you');
+        break;
+    default:
+        console.log('same all!');
+        break;
+}
+
+//11.Loops
+
+//while
+let i = 3;
+while(i>0)
+{
+    console.log(`while: ${i}`);
+    i--;
+}
+
+//do while
+do{
+    console.log(`do while: ${i}`);
+    i--;
+}while(i>0);
+
+//for
+for(i=3; i>0; i--){
+    console.log(`for: ${i}`);
+}
+
+//nested loops (이중 for문) - Big O : O(n^2)
+for(let i=0; i<3; i++){
+    for(let j=0; j<3; j++){
+        console.log(`i: ${i}, j:${j}`);
+    }
+}
+
+//Quiz 01
+//0~10까지 짝수만 프린트
+for(let i=0 ; i<10; i++){
+    if(i%2 === 1){
+        continue;
+    }
+    console.log(`i: ${i}`);
+}
+
+//Quiz 02
+//0~10까지 출력 하지만 8보다 크면 stop
+for(let i=0; i<10; i++){
+    if(i > 8){
+        break;
+    }
+    console.log(`${i}`);
+}

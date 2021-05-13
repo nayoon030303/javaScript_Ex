@@ -6,11 +6,16 @@ function init(){
     let srcInput = section.querySelector(".src-input");
     let changeButton = section.querySelector(".change-button");
     let img = section.querySelector(".img");
-
+    let colorInput = section.querySelector(".color-input");
+    
     changeButton.onclick = function(){
         //img.src = `img/${srcInput.value}.jpg`;
         //img.src = `img/${imgSelect.value}`;
         img.src = `img/${srcInput.value}`;
+
+        //style 방법 2가지
+        //img.style["border-color"] = colorInput.value;
+        img.style.borderColor = colorInput.value;
 
         console.log(img.src);
     }

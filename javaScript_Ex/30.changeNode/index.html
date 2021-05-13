@@ -12,7 +12,17 @@
     <section id = "section5">
         <h1>엘리먼트 노드 속성 변경</h1>
         <div>
-            <input class = "src-input"/>
+            <input class = "src-input" list = "img-list"/>
+            <datalist id="img-list">
+                <option value = "1.jpg">img1</option>
+                <option value = "2.jpg">img2</option>
+                <option value = "3.jpg">img3</option>
+            </datalist>
+            <select class = "img-select">
+                <option value = "1.jpg">img1</option>
+                <option value = "2.jpg">img2</option>
+                <option value = "3.jpg">img3</option>
+            </select>
             <input class ="change-button" type = "button" value="변경하기"/>
         </div>
         <div>

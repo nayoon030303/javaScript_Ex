@@ -14,7 +14,7 @@ function ex1(){
     };
 
     delBtn.onclick = function(){
-        var textNode = menuList.childNodes[0]; //첫번쨰 노드를 가져옴
+        let textNode = menuList.childNodes[0]; //첫번쨰 노드를 가져옴
         menuList.removeChild(textNode);
     };
 }
@@ -30,22 +30,28 @@ function ex2(){
     
     addBtn.onclick = function(){
         let input = titleInput.value;
-        let txtNode = document.createTextNode(input);//새로운 노드를 생성
 
+        let html = `<a href="">${input}</a>`;
+        let li = document.createElement("li");
+        li.innerHTML = html;
+
+        menuList.appendChild(li);
+
+       // menuList.innerHTML += `<li><a href="">${input}</a></li>`;// +=성능에 문제 
+
+        /*let txtNode = document.createTextNode(input);//새로운 노드를 생성
         let aNode = document.createElement("a");
         aNode.href="";
         aaNode.appendChild(txtNode)
-
         let liNode = document.createElement("li");
         liNode.appendChild(aNode);
-
-        menuList.appendChild(liNode);
-       
+        menuList.appendChild(liNode);*/
     };
 
     delBtn.onclick = function(){
-        var textNode = menuList.childNodes[0]; //첫번쨰 노드를 가져옴
-        menuList.removeChild(textNode);
+        //let textNode = menuList.childNodes[0]; //첫번쨰 노드를 가져옴
+        let liNode = menuList.children[0];
+        menuList.removeChild(liNode);
     };
 }
 

@@ -16,6 +16,8 @@ let init = function(){
         }else{
             //tbodyNode.removeChild(currentNode);
             //tbodyNode.insertBefore(currentNode,nextNode);
+
+            //prevNode너 currentNode 뒤로가라
             currentNode.insertAdjacentElement("afterend",prevNode);
         }
     };
@@ -29,6 +31,8 @@ let init = function(){
         }else{
             //tbodyNode.removeChild(nextNode);
             //tbodyNode.insertBefore(nextNode,currentNode);
+
+            //nextNode너 currentNode너 앞으로 가라
             currentNode.insertAdjacentElement("beforebegin",nextNode);
             
         }

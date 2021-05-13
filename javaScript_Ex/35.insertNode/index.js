@@ -10,12 +10,13 @@ let init = function(){
    
 
     upBtn.onclick = function(){ 
-        let nextNode = currentNode.previousElementSibling;
-        if(nextNode===null){
+        let prevNode = currentNode.previousElementSibling;
+        if(prevNode===null){
             alert("더 이상 이동할 수 없습니다.");
         }else{
-            tbodyNode.removeChild(currentNode);
-            tbodyNode.insertBefore(currentNode,nextNode);
+            //tbodyNode.removeChild(currentNode);
+            //tbodyNode.insertBefore(currentNode,nextNode);
+            currentNode.insertAdjacentElement("afterend",prevNode);
         }
     };
       
@@ -26,8 +27,10 @@ let init = function(){
             alert("더 이상 이동할 수 없습니다.");
             return;
         }else{
-            tbodyNode.removeChild(nextNode);
-            tbodyNode.insertBefore(nextNode,currentNode);
+            //tbodyNode.removeChild(nextNode);
+            //tbodyNode.insertBefore(nextNode,currentNode);
+            currentNode.insertAdjacentElement("beforebegin",nextNode);
+            
         }
     };
    

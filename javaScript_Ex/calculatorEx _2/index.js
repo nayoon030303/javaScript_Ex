@@ -6,12 +6,10 @@
 function init(){
 
     let section2 = document.getElementById("section-2");
-    let inputs = section2.getElementsByTagName("input");
-
-    let txtX = inputs[0];
-    let txtY = inputs[1];
-    let btnAdd = inputs[2];
-    let textSum = inputs[3];
+    let txtX = section2.getElementsByClassName("txt-x")[0];
+    let txtY = section2.getElementsByClassName("txt-y")[0];
+    let btnAdd = section2.getElementsByClassName("add-btn")[0];
+    let textSum = section2.getElementsByClassName("txt-sum")[0];
 
     btnAdd.onclick = function(){
         let x = parseInt(txtX.value);

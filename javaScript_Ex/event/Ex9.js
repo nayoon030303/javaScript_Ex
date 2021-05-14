@@ -10,7 +10,7 @@ function init(){
     let offset = {x:0,y:0};
     let position = {left: container.offsetLeft, top:container.offsetTop};
     console.log(position);
-    container.onmousedown = function(e){
+    section.onmousedown = function(e){
         if(e.target.classList.contains("box")){ //박스를 눌렀을때만 드래그
            
             dragging = true;
@@ -21,11 +21,11 @@ function init(){
         }
     };
 
-    container.onmouseup = function(e){
+    section.onmouseup = function(e){
         dragging = false;
     };
 
-    container.onmousemove = function(e){
+    section.onmousemove = function(e){
        if(!dragging)return;
       
        let x = e.pageX-offset.x-position.left;

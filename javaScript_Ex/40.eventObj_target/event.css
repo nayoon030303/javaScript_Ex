@@ -1,0 +1,14 @@
+.file-button{
+    display: none;
+}
+.file-trigger-button{
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+.file-trigger-button:hover{
+    background-color: lightblue;
+}

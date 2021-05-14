@@ -1,7 +1,5 @@
 
-
-
-//Ex2-버블링을 이용한 사용자 이벤트 처리하기
+//Ex3-이벤트 버블링 멈추기
 function init(){
     const section = document.querySelector("#section3");
     let imgList = section.querySelector(".img-list");

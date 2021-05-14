@@ -1,6 +1,5 @@
 
-
-
+//연습문제 1-선택된 레코드 삭제하기:event target
 function init(){
     const section = document.querySelector("#section1-1");
 

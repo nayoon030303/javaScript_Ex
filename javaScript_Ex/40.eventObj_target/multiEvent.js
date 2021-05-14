@@ -6,9 +6,12 @@ function init(){
     const tbody = section.querySelector("tbody");
    
     tbody.onclick = function(e){
+
+        //엘리먼트 노드의 기본 행위 막기 
+        e.preventDefault();
         let target = e.target;
        
-        if(target.nodeName !== "INPUT")return;
+        if(target.nodeName !== "A")return;
 
         if(target.classList.contains("sel-button")){
            

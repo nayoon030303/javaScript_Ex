@@ -8,6 +8,7 @@ function init(){
 
     fileTriggerBtn.onclick = function(){
 
+        //event 트리거
         let event = new MouseEvent("click",{
             'view':window,
             'bubbles':true,

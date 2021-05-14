@@ -1,0 +1,58 @@
+.container{
+    background: beige;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: column nowrap; */
+
+    justify-content: space-around;/*main axis 중심축에서 아이템 배치 */
+    align-items: baseline;
+    align-content: space-between;
+}
+
+.item{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.item1{
+    background: #ef9a9a;
+}
+
+.item2{
+    background: #f48fb1;
+}
+
+.item3{
+    background: #ce93d8;
+}
+
+.item4{
+    background: #b39ddb;
+}
+
+.item5{
+    background: #90caf9;
+}
+
+.item6{
+    background: #a5d6a7;
+}
+
+.item7{
+    background:#e6ee9c
+}
+
+.item8{
+    background: rgb(255, 244, 147);
+}
+
+.item9{
+    background: rgb(254, 198, 117);
+}
+
+.item10{
+    background: rgb(255, 161, 135);
+}

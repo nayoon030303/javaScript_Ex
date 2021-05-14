@@ -1,0 +1,33 @@
+* {
+    color:gold;
+}
+
+li{
+    color: blue;
+}
+
+.red{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border:1px dashed red;
+    margin: 20px;
+    padding: 20px;
+}
+
+li #special{
+    color: palevioletred;
+}
+
+button:hover{
+    color: red;
+    background-color: indigo;
+}
+
+a[href^="naver"]{
+    color: rgb(34, 30, 236);
+}
+
+a[href$=".com"]{
+    color: rgb(30, 236, 109);
+}

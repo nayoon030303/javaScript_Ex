@@ -1,0 +1,16 @@
+div, span{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+
+}
+
+div{
+    background: red;
+    display: inline-block;
+}
+
+span{
+    background: blue;
+    display: block;
+}

@@ -1,3 +1,5 @@
+
+//Ex6-마우스 좌표#클릭 위치에 박스 옮기기
 function init(){
     const section = document.querySelector("#section6");
 

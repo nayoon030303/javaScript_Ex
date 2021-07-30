@@ -21,19 +21,19 @@
 
 // //과제 
 
-// //async와 await를 상요하여 코드 변경하기 
-// //프라미스 체이닝 챕터의 예시 중 하나를 .then/catch 대신 async/await를 사용해 다시 작성해 봅시다. 
-// async function loadJson(url){
-//     let response = await fetch(url);
-//     if(response.status == 200){
-//         let json = await response.json();
-//         return json;
-//         //return response.json();
+//async와 await를 상요하여 코드 변경하기 
+//프라미스 체이닝 챕터의 예시 중 하나를 .then/catch 대신 async/await를 사용해 다시 작성해 봅시다. 
+async function loadJson(url){
+    let response = await fetch(url);
+    if(response.status == 200){
+        let json = await response.json();
+        return json;
+        //return response.json();
     
-//     }else{
-//         return new Error(response.status);
-//     }
-// }
+    }else{
+        return new Error(response.status);
+    }
+}
 
 // loadJson('no-such-user.json').catch(alert);
 
